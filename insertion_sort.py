@@ -6,22 +6,22 @@ def swap(arr, i , j):
     arr[j] = arr[i]
     arr[i] = temp
     return arr
-    
-i = 1
-temp = 0
-n = len(arr)
-while i < n:
-    current = arr[i]
-    j = i - 1
-    while j >= 0:
-        if current < arr[j]:
-            arr = swap(arr,j,j+1)
-            '''temp = arr[j]
-            arr[j] = arr[i]
-            arr[i] = temp'''
-            print(arr)
-        j = j -1
-        current = arr[j+1]
-    i = i + 1
+def insertion_sort(arr):    
+    i = 1
+    temp = 0
+    n = len(arr)
+    while i < n:
+        current = arr[i]
+        j = i - 1
+        while j >= 0:
+            if current < arr[j]:
+                arr = swap(arr,j,j+1)
+                '''temp = arr[j]
+                arr[j] = arr[i]
+                arr[i] = temp'''
+                print(arr)
+            j = j -1
+            current = arr[j+1]
+        i = i + 1
 
 
