@@ -1,7 +1,7 @@
 arr = [3,44,5,47,15,36,26,27,2,46]
 print("array = ", arr)
 
-sorted_elmt = arr[0]
+
 i = 1
 temp = 0
 n = len(arr)
